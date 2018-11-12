@@ -1,5 +1,3 @@
-def func(x):
-    return x + 1
-
-def test_answer():
-    assert isinstance(func(3),str)
+import df_list
+import pandas as pd
+a=df_list.df_to_list(pd.DataFrame({"name":["Vipin","Gupta"]}))
