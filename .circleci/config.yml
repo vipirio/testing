@@ -49,11 +49,6 @@ jobs:
           command: |
             . venv/bin/activate
             python manage.py test
-      deployment:
-        production:
-          branch: master
-            commands:
-              - scp -r circle-pushing/* username@my-server:/path-to-put-files-on-server/
 
       - store_artifacts:
           path: test-reports
